@@ -1,4 +1,4 @@
-#include "outils.h"
+#include "../headers/outils.h"
 
 float* zBuffer;
 int xMax, yMax, zMax, xIntermediaire, yIntermediaire, zIntermediaire, xMin, yMin, zMin;

@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="90">
+<configurationDescriptor version="94">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>Matrix.h</itemPath>
-      <itemPath>line.h</itemPath>
-      <itemPath>moteur.h</itemPath>
-      <itemPath>outils.h</itemPath>
+      <itemPath>headers/Matrix.h</itemPath>
+      <itemPath>headers/line.h</itemPath>
+      <itemPath>headers/moteur.h</itemPath>
+      <itemPath>headers/outils.h</itemPath>
       <itemPath>tgaimage.h</itemPath>
-      <itemPath>triangle.h</itemPath>
-      <itemPath>variableGlobale.h</itemPath>
-    </logicalFolder>
-    <logicalFolder name="ResourceFiles"
-                   displayName="Resource Files"
-                   projectFiles="true">
+      <itemPath>headers/triangle.h</itemPath>
+      <itemPath>headers/variableGlobale.h</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>Matrix.cpp</itemPath>
-      <itemPath>line.cpp</itemPath>
-      <itemPath>main.cpp</itemPath>
-      <itemPath>moteur.cpp</itemPath>
-      <itemPath>outils.cpp</itemPath>
-      <itemPath>tgaimage.cpp</itemPath>
-      <itemPath>triangle.cpp</itemPath>
+      <itemPath>src/Matrix.cpp</itemPath>
+      <itemPath>src/line.cpp</itemPath>
+      <itemPath>src/main.cpp</itemPath>
+      <itemPath>src/moteur.cpp</itemPath>
+      <itemPath>src/outils.cpp</itemPath>
+      <itemPath>src/tgaimage.cpp</itemPath>
+      <itemPath>src/triangle.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -49,33 +45,33 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="Matrix.cpp" ex="false" tool="1" flavor2="0">
+      <item path="headers/Matrix.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Matrix.h" ex="false" tool="3" flavor2="0">
+      <item path="headers/line.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="line.cpp" ex="false" tool="1" flavor2="0">
+      <item path="headers/moteur.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="line.h" ex="false" tool="3" flavor2="0">
+      <item path="headers/outils.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="headers/triangle.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="moteur.cpp" ex="false" tool="1" flavor2="0">
+      <item path="headers/variableGlobale.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="moteur.h" ex="false" tool="3" flavor2="0">
+      <item path="src/Matrix.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="outils.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/line.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="outils.h" ex="false" tool="3" flavor2="0">
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="tgaimage.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/moteur.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/outils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/tgaimage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/triangle.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="tgaimage.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="triangle.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="triangle.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="variableGlobale.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -98,31 +94,31 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="Matrix.cpp" ex="false" tool="1" flavor2="0">
+      <item path="headers/Matrix.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="Matrix.h" ex="false" tool="3" flavor2="0">
+      <item path="headers/line.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="line.h" ex="false" tool="3" flavor2="0">
+      <item path="headers/moteur.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="headers/outils.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="moteur.cpp" ex="false" tool="1" flavor2="0">
+      <item path="headers/triangle.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="moteur.h" ex="false" tool="3" flavor2="0">
+      <item path="headers/variableGlobale.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="outils.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/Matrix.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="outils.h" ex="false" tool="3" flavor2="0">
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="tgaimage.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/moteur.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/outils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/tgaimage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/triangle.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="tgaimage.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="triangle.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="triangle.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="variableGlobale.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

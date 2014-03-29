@@ -1,4 +1,4 @@
-#include "line.h"
+#include "../headers/line.h"
 
 void line(Point p0, Point p1, TGAImage &image, TGAColor c) {
     bool steep = abs(p1.y - p0.y) > abs(p1.x - p0.x);

@@ -5,7 +5,7 @@
  * Created on 11 mars 2014, 22:53
  */
 
-#include "Matrix.h"
+#include "../headers/Matrix.h"
 
 Matrix::Matrix(int nombreLigne, int nombreColonne) {
     this->nombreLigne = nombreLigne;

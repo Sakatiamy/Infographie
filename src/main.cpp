@@ -5,8 +5,17 @@
  * Created on 25 février 2014, 22:09
  */
 
-#include "moteur.h"
-#include "Matrix.h"
+#include "../headers/moteur.h"
+#include "../headers/Matrix.h"
+
+string fichierObj = "tga_files/source/african_head.obj";
+string fichierNM = "tga_files/source/african_head_nm.tga";
+string fichierTexture = "tga_files/source/african_head_diffuse.tga";
+
+string fichierzBufferNormal = "tga_files/rendu/zBufferCamera.tga";
+
+string fichierzBufferLumiere = "tga_files/rendu/zBufferLumiere.tga";
+string fichierzBufferCamera = "tga_files/rendu/zBufferCamera.tga";
 
 /*Test de la validite de l'objet suivant les différents types de representation*/
 void testObject(Vecteur origine, Vecteur camera, Vecteur lumiere, float coefficientZoom) {
@@ -21,20 +30,16 @@ void testObject(Vecteur origine, Vecteur camera, Vecteur lumiere, float coeffici
     TGAImage image9 = TGAImage(_COL, _LIGNE, TGAImage::RGB);
     TGAImage image10 = TGAImage(_COL, _LIGNE, TGAImage::RGB);
 
-    string fichierNM = "african_head_nm.tga";
-    string fichierTexture = "african_head_diffuse.tga";
-    string fichierzBufferNormal = "zBufferCamera.tga";
-
-    lireFichierTriangle("african_head.obj", image1, origine, camera, lumiere, coefficientZoom);
-    lireFichierTriangleBuffer("african_head.obj", image0, origine, camera, lumiere, fichierzBufferNormal, coefficientZoom);
-    lireFichierTriangleBufferPhong("african_head.obj", image6, origine, camera, lumiere, fichierzBufferNormal, coefficientZoom);
-    lireFichierTriangleBufferPhongTexture("african_head.obj", fichierNM, fichierTexture, image7, origine, camera, lumiere, fichierzBufferNormal, coefficientZoom);
-    lireFichierTexture("african_head.obj", fichierNM, fichierTexture, image10, origine, camera, lumiere, fichierzBufferNormal, coefficientZoom);
-    lireFichierTriangleBufferPhongDiffuse("african_head.obj", fichierTexture, image9, origine, camera, lumiere, fichierzBufferNormal, coefficientZoom);
-    lireFichierTriangleBufferPhongNormalMapping("african_head.obj", fichierNM, image8, origine, camera, lumiere, fichierzBufferNormal, coefficientZoom);
-    lireFichierLigne("african_head.obj", image4, origine, camera, lumiere, coefficientZoom);
-    lireFichierFilsDeFer("african_head.obj", image2, TGAColor(0, 255, 0, 255), origine, camera, coefficientZoom);
-    lireFichierComplet("african_head.obj", image3, TGAColor(0, 255, 0, 255), origine, camera, coefficientZoom);
+    lireFichierTriangle(fichierObj, image1, origine, camera, lumiere, coefficientZoom);
+    lireFichierTriangleBuffer(fichierObj, image0, origine, camera, lumiere, fichierzBufferNormal, coefficientZoom);
+    lireFichierTriangleBufferPhong(fichierObj, image6, origine, camera, lumiere, fichierzBufferNormal, coefficientZoom);
+    lireFichierTriangleBufferPhongTexture(fichierObj, fichierNM, fichierTexture, image7, origine, camera, lumiere, fichierzBufferNormal, coefficientZoom);
+    lireFichierTexture(fichierObj, fichierNM, fichierTexture, image10, origine, camera, lumiere, fichierzBufferNormal, coefficientZoom);
+    lireFichierTriangleBufferPhongDiffuse(fichierObj, fichierTexture, image9, origine, camera, lumiere, fichierzBufferNormal, coefficientZoom);
+    lireFichierTriangleBufferPhongNormalMapping(fichierObj, fichierNM, image8, origine, camera, lumiere, fichierzBufferNormal, coefficientZoom);
+    lireFichierLigne(fichierObj, image4, origine, camera, lumiere, coefficientZoom);
+    lireFichierFilsDeFer(fichierObj, image2, TGAColor(0, 255, 0, 255), origine, camera, coefficientZoom);
+    lireFichierComplet(fichierObj, image3, TGAColor(0, 255, 0, 255), origine, camera, coefficientZoom);
 
 }
 
@@ -42,16 +47,11 @@ void testFinal(Vecteur origine, Vecteur camera, Vecteur lumiere, float coefficie
     TGAImage image1 = TGAImage(_COL, _LIGNE, TGAImage::RGB);
     TGAImage image2 = TGAImage(_COL, _LIGNE, TGAImage::RGB);
 
-    string fichierNM = "african_head_nm.tga";
-    string fichierTexture = "african_head_diffuse.tga";
-    string fichierzBufferLumiere = "zBufferLumiere.tga";
-    string fichierzBufferCamera = "zBufferCamera.tga";
-
     Vecteur cameraInit = camera;
     camera.x = lumiere.x;
     camera.y = lumiere.y;
     camera.z = lumiere.z;
-    lireFichierTexture("african_head.obj", fichierNM, fichierTexture, image1, origine, camera, lumiere, fichierzBufferLumiere, coefficientZoom);
+    lireFichierTexture(fichierObj, fichierNM, fichierTexture, image1, origine, camera, lumiere, fichierzBufferLumiere, coefficientZoom);
     camera = cameraInit;
     float* zBufferOmbre = new float[_LIGNE * _COL];
     for (int i = 0; i < _LIGNE; i++) {
@@ -60,7 +60,7 @@ void testFinal(Vecteur origine, Vecteur camera, Vecteur lumiere, float coefficie
             zBufferOmbre[i + j * _LIGNE] = valeur;
         }
     }
-    lireFichierFinal("african_head.obj", fichierNM, fichierTexture, fichierzBufferLumiere, image2, origine, camera, lumiere, zBufferOmbre, fichierzBufferCamera, coefficientZoom);
+    lireFichierFinal(fichierObj, fichierNM, fichierTexture, fichierzBufferLumiere, image2, origine, camera, lumiere, zBufferOmbre, fichierzBufferCamera, coefficientZoom);
 
 }
 

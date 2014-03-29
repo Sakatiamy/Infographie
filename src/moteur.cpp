@@ -1,5 +1,5 @@
-#include "moteur.h"
-#include "Matrix.h"
+#include "../headers/moteur.h"
+#include "../headers/Matrix.h"
 
 void lireFichierFilsDeFer(string texte, TGAImage &image, TGAColor c, Vecteur origine, Vecteur camera, float coefficientZoom) {
     ifstream fichier(texte.c_str(), ios::in);
@@ -48,8 +48,8 @@ void lireFichierFilsDeFer(string texte, TGAImage &image, TGAColor c, Vecteur ori
 
         }
         image.flip_vertically();
-        char buffer[16];
-        snprintf(buffer, sizeof (buffer), "fil_de_fer.tga");
+        char buffer[32];
+        snprintf(buffer, sizeof (buffer), "tga_files/rendu/fil_de_fer.tga");
         image.write_tga_file(buffer);
         fichier.close();
     } else {
@@ -103,8 +103,8 @@ void lireFichierComplet(string texte, TGAImage &image, TGAColor c, Vecteur origi
 
         }
         image.flip_vertically();
-        char buffer[16];
-        snprintf(buffer, sizeof (buffer), "complet.tga");
+        char buffer[32];
+        snprintf(buffer, sizeof (buffer), "tga_files/rendu/complet.tga");
         image.write_tga_file(buffer);
         fichier.close();
     } else {
@@ -204,8 +204,8 @@ void lireFichierLigne(string texte, TGAImage &image, Vecteur origine, Vecteur ca
 
         }
         image.flip_vertically();
-        char buffer[16];
-        snprintf(buffer, sizeof (buffer), "topLigne.tga");
+        char buffer[32];
+        snprintf(buffer, sizeof (buffer), "tga_files/rendu/topLigne.tga");
         image.write_tga_file(buffer);
         fichier.close();
     } else {
@@ -302,8 +302,8 @@ void lireFichierTriangle(string texte, TGAImage &image, Vecteur origine, Vecteur
 
         }
         image.flip_vertically();
-        char buffer[16];
-        snprintf(buffer, sizeof (buffer), "topTriangle.tga");
+        char buffer[32];
+        snprintf(buffer, sizeof (buffer), "tga_files/rendu/topTriangle.tga");
         image.write_tga_file(buffer);
         fichier.close();
     } else {
@@ -402,8 +402,8 @@ void lireFichierTriangleBuffer(string texte, TGAImage &image, Vecteur origine, V
         }
         zBufferImage(nomBuffer.c_str());
         image.flip_vertically();
-        char buffer[16];
-        snprintf(buffer, sizeof (buffer), "zGouraud.tga");
+        char buffer[32];
+        snprintf(buffer, sizeof (buffer), "tga_files/rendu/zGouraud.tga");
         image.write_tga_file(buffer);
         fichier.close();
     } else {
@@ -502,8 +502,8 @@ void lireFichierTriangleBufferPhong(string texte, TGAImage &image, Vecteur origi
         }
         zBufferImage(nomBuffer.c_str());
         image.flip_vertically();
-        char buffer[16];
-        snprintf(buffer, sizeof (buffer), "zPhong.tga");
+        char buffer[32];
+        snprintf(buffer, sizeof (buffer), "tga_files/rendu/zPhong.tga");
         image.write_tga_file(buffer);
         fichier.close();
     } else {
@@ -626,8 +626,8 @@ void lireFichierTriangleBufferPhongNormalMapping(string texte, string imageNorma
         }
         zBufferImage(nomBuffer.c_str());
         image.flip_vertically();
-        char buffer[16];
-        snprintf(buffer, sizeof (buffer), "zPNM.tga");
+        char buffer[32];
+        snprintf(buffer, sizeof (buffer), "tga_files/rendu/zPNM.tga");
         image.write_tga_file(buffer);
         fichier.close();
     } else {
@@ -750,8 +750,8 @@ void lireFichierTriangleBufferPhongDiffuse(string texte, string imageDiffuse, TG
         }
         zBufferImage(nomBuffer.c_str());
         image.flip_vertically();
-        char buffer[16];
-        snprintf(buffer, sizeof (buffer), "zPTDiff.tga");
+        char buffer[32];
+        snprintf(buffer, sizeof (buffer), "tga_files/rendu/zPTDiff.tga");
         image.write_tga_file(buffer);
         fichier.close();
     } else {
@@ -878,8 +878,8 @@ void lireFichierTriangleBufferPhongTexture(string texte, string imageNormalMappi
         }
         zBufferImage(nomBuffer.c_str());
         image.flip_vertically();
-        char buffer[16];
-        snprintf(buffer, sizeof (buffer), "zPTex.tga");
+        char buffer[32];
+        snprintf(buffer, sizeof (buffer), "tga_files/rendu/zPTex.tga");
         image.write_tga_file(buffer);
         fichier.close();
     } else {
@@ -1006,8 +1006,8 @@ void lireFichierTexture(string texte, string imageNormalMapping, string imageDif
         }
         zBufferImage(nomBuffer.c_str());
         image.flip_vertically();
-        char buffer[16];
-        snprintf(buffer, sizeof (buffer), "zzRendu_Lum.tga");
+        char buffer[32];
+        snprintf(buffer, sizeof (buffer), "tga_files/rendu/zzRendu_Lum.tga");
         image.write_tga_file(buffer);
         fichier.close();
     } else {
@@ -1137,8 +1137,8 @@ void lireFichierFinal(string texte, string imageNormalMapping, string imageDiffu
         }
         zBufferImage(nomBuffer.c_str());
         image.flip_vertically();
-        char buffer[16];
-        snprintf(buffer, sizeof (buffer), "zzRendu_Fin.tga");
+        char buffer[32];
+        snprintf(buffer, sizeof (buffer), "tga_files/rendu/zzRendu_Fin.tga");
         image.write_tga_file(buffer);
         fichier.close();
     } else {

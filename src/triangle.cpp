@@ -1,4 +1,4 @@
-#include "triangle.h"
+#include "../headers/triangle.h"
 
 void triangle(Point p0, Point p1, Point p2, TGAImage &image, TGAColor c) {
     ordonnerPoints(p0, p1, p2);

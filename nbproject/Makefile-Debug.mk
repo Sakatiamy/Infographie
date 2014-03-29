@@ -35,13 +35,13 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Matrix.o \
-	${OBJECTDIR}/line.o \
-	${OBJECTDIR}/main.o \
-	${OBJECTDIR}/moteur.o \
-	${OBJECTDIR}/outils.o \
-	${OBJECTDIR}/tgaimage.o \
-	${OBJECTDIR}/triangle.o
+	${OBJECTDIR}/src/Matrix.o \
+	${OBJECTDIR}/src/line.o \
+	${OBJECTDIR}/src/main.o \
+	${OBJECTDIR}/src/moteur.o \
+	${OBJECTDIR}/src/outils.o \
+	${OBJECTDIR}/src/tgaimage.o \
+	${OBJECTDIR}/src/triangle.o
 
 
 # C Compiler Flags
@@ -68,40 +68,40 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/infographie: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/infographie ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/Matrix.o: Matrix.cpp 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/src/Matrix.o: src/Matrix.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Matrix.o Matrix.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Matrix.o src/Matrix.cpp
 
-${OBJECTDIR}/line.o: line.cpp 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/src/line.o: src/line.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/line.o line.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/line.o src/line.cpp
 
-${OBJECTDIR}/main.o: main.cpp 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/src/main.o: src/main.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/main.o src/main.cpp
 
-${OBJECTDIR}/moteur.o: moteur.cpp 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/src/moteur.o: src/moteur.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/moteur.o moteur.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/moteur.o src/moteur.cpp
 
-${OBJECTDIR}/outils.o: outils.cpp 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/src/outils.o: src/outils.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/outils.o outils.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/outils.o src/outils.cpp
 
-${OBJECTDIR}/tgaimage.o: tgaimage.cpp 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/src/tgaimage.o: src/tgaimage.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/tgaimage.o tgaimage.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/tgaimage.o src/tgaimage.cpp
 
-${OBJECTDIR}/triangle.o: triangle.cpp 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/src/triangle.o: src/triangle.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/triangle.o triangle.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/triangle.o src/triangle.cpp
 
 # Subprojects
 .build-subprojects:
