@@ -15,13 +15,13 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>src/Matrix.cpp</itemPath>
-      <itemPath>src/line.cpp</itemPath>
-      <itemPath>src/main.cpp</itemPath>
-      <itemPath>src/moteur.cpp</itemPath>
-      <itemPath>src/outils.cpp</itemPath>
-      <itemPath>src/tgaimage.cpp</itemPath>
-      <itemPath>src/triangle.cpp</itemPath>
+      <itemPath>sources/Matrix.cpp</itemPath>
+      <itemPath>sources/line.cpp</itemPath>
+      <itemPath>sources/main.cpp</itemPath>
+      <itemPath>sources/moteur.cpp</itemPath>
+      <itemPath>sources/outils.cpp</itemPath>
+      <itemPath>sources/tgaimage.cpp</itemPath>
+      <itemPath>sources/triangle.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -57,19 +57,19 @@
       </item>
       <item path="headers/variableGlobale.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/Matrix.cpp" ex="false" tool="1" flavor2="0">
+      <item path="sources/Matrix.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/line.cpp" ex="false" tool="1" flavor2="0">
+      <item path="sources/line.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="sources/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/moteur.cpp" ex="false" tool="1" flavor2="0">
+      <item path="sources/moteur.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/outils.cpp" ex="false" tool="1" flavor2="0">
+      <item path="sources/outils.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/tgaimage.cpp" ex="false" tool="1" flavor2="0">
+      <item path="sources/tgaimage.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/triangle.cpp" ex="false" tool="1" flavor2="0">
+      <item path="sources/triangle.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="tgaimage.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -106,17 +106,17 @@
       </item>
       <item path="headers/variableGlobale.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/Matrix.cpp" ex="false" tool="1" flavor2="0">
+      <item path="sources/Matrix.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="sources/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/moteur.cpp" ex="false" tool="1" flavor2="0">
+      <item path="sources/moteur.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/outils.cpp" ex="false" tool="1" flavor2="0">
+      <item path="sources/outils.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/tgaimage.cpp" ex="false" tool="1" flavor2="0">
+      <item path="sources/tgaimage.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/triangle.cpp" ex="false" tool="1" flavor2="0">
+      <item path="sources/triangle.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="tgaimage.h" ex="false" tool="3" flavor2="0">
       </item>
